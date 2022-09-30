@@ -3,21 +3,14 @@ import { requestAllByUsingThunk } from "../store/states/common/thunks.js";
 import { selectAllServices } from "../store/states/services/selectors.js";
 import { selectAllUserTypes, selectCurrentUser } from "../store/states/user/selectors.js";
 import { SelectService } from "../components/index.js";
-import { isEmptyObject, isSomeObjectWithData } from "../../myOwnModules/lodash/index.js";
+import { isEmptyObject } from "../../myOwnModules/lodash/index.js";
 import { formatDataToHTML } from "../utils/index.js";
 
-export function AppRender() {
+export function MainScreen() {
     const userData = useStoreSelector(selectCurrentUser);
     const AllUserTypes = useStoreSelector(selectAllUserTypes);
     const allServices = useStoreSelector(selectAllServices);
-    const isSomeWithData = isSomeObjectWithData(
-      userData,
-      AllUserTypes,
-      allServices
-    );
-    const isRequestButtonVisible = isSomeWithData
-      ? false
-      : isEmptyObject(userData, AllUserTypes, allServices);
+    const isRequestButtonVisible = isEmptyObject(userData, AllUserTypes, allServices);
     const requestDataButtonId = "requestAllData";
   
     const dispatch = useStoreDispatch();

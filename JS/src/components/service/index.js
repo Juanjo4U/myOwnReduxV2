@@ -30,11 +30,10 @@ export function SelectService() {
   }
 
   setTimeout(() => {
-    if (servicesLenth) {
-      const btn = document.getElementById(selectRandomButtonId);
-      btn?.addEventListener("click", selectRandomService);
-    }
+    const btn = document.getElementById(selectRandomButtonId);
+    btn?.addEventListener("click", selectRandomService);
   }, 0);
+  
   return `
       <br>
       <h5 style="color: #8a05ff">Next ACTION is a normal dispatch</h5>

@@ -1,5 +1,5 @@
 import { store } from "./src/store/index.js";
-import { AppRender } from "./src/screens/index.js";
+import { App } from "./src/App.js";
 
-AppRender();
-store.subscribe(AppRender);
+App();
+store.subscribe(App);

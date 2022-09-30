@@ -1,17 +1,13 @@
 export function isFunction(...functions) {
-  return !functions.find((func) => typeof func !== "function");
+  return functions.every((func) => typeof func === "function");
 }
 
 export function isObject(...objects) {
-  return !objects.find((obj) => Array.isArray(obj) || typeof obj !== "object");
+  return objects.every((obj) => typeof obj === "object" && !Array.isArray(obj));
 }
 
 export function isEmptyObject(...objects) {
-  return objects.find((obj) => !Object.values(obj).length);
-}
-
-export function isSomeObjectWithData(...objects) {
-  return objects.some((obj) => Object.values(obj).length);
+  return objects.every((obj) => !Object.values(obj).length);
 }
 
 export function withDelay(func = () => {}, delay = 0.5) {
