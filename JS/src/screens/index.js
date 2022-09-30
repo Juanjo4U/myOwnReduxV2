@@ -26,7 +26,7 @@ export function MainScreen() {
       }
     }, 0);
   
-    return (document.body.innerHTML = `
+    return `
         <h3 style="text-align: center; color: orange;">THIS IS MY OWN REDUX - V2</h3>
         <h4 style="text-align: center; color: red;">Open the console to see how my OWN LOGGER middleware works as well</h4>
         <br>
@@ -43,6 +43,5 @@ export function MainScreen() {
             `
             : ``
         }
-      `
-    );
+      `;
   }
