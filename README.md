@@ -7,4 +7,4 @@ The usage example is on ***[JS/src](https://github.com/Juanjo4U/myOwnReduxV2/tre
 
 You can view results on ***[GitHub Pages](https://juanjo4u.github.io/myOwnReduxV2/)***
 
-![my own redux-v2 result screenshot](./assets/my-own-redux-v2-screenshot.png?raw=true)
+[![my own redux-v2 result screenshot](./assets/my-own-redux-v2-screenshot.png?raw=true)](https://juanjo4u.github.io/myOwnReduxV2/)
