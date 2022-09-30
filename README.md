@@ -1,3 +1,3 @@
 ﻿# myOwnReduxV2
 
-You can view results on [Codesandbox](https://codesandbox.io/s/github/Juanjo4U/myOwnReduxV2?file=/JS/myOwnModules/redux/createStore/index.js)
+You can view results on [Codesandbox Link](https://8wybr4.csb.app/)
